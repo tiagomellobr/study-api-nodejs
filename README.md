@@ -3,6 +3,7 @@
 
 Run dev
 ```bash
+$ npm i
 $ npm start
 ```
 
