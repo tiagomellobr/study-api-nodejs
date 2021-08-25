@@ -1,6 +1,6 @@
 /* eslint-disable no-return-await */
 /* eslint-disable no-undef */
-import Product from '../../../src/models/product';
+const Product = require('../../../src/models/product');
 
 describe('Routes: Products', () => {
   let request;

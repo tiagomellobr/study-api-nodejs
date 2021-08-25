@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const mongodbUrl = process.env.MONGODB_URL || 'mongodb://localhost:27017/test';
 
@@ -9,7 +9,7 @@ const connect = () => mongoose.connect(mongodbUrl, {
 
 const close = () => mongoose.connection.close();
 
-export default {
+module.exports = {
   connect,
   close,
 };

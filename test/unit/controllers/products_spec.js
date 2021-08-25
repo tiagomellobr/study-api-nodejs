@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-expressions */
 /* eslint-disable no-undef */
-import sinon from 'sinon';
-import ProductsController from '../../../src/controllers/products';
-import Product from '../../../src/models/product';
+const sinon = require('sinon');
+const ProductsController = require('../../../src/controllers/products');
+const Product = require('../../../src/models/product');
 
 describe('Controllers: Products', () => {
   const defaultProduct = [{

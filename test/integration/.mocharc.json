@@ -1,6 +1,5 @@
 {
     "require": [
-        "@babel/register",
         "test/integration/helpers.js"
     ],
     "reporter": "spec",

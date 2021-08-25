@@ -12,4 +12,4 @@ const ProductsController = (Product) => ({
   get,
 });
 
-export default ProductsController;
+module.exports = ProductsController;

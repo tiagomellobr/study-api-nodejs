@@ -1,6 +1,6 @@
-import express from 'express';
-import routes from './routes';
-import database from './config/database';
+const express = require('express');
+const routes = require('./routes');
+const database = require('./config/database');
 
 const app = express();
 
@@ -13,7 +13,7 @@ const configureExpress = () => {
   return app;
 };
 
-export default async () => {
+module.exports = async () => {
   const setupApp = configureExpress();
   await setupApp.database.connect();
 

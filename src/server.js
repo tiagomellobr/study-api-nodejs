@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import setupApp from './app';
+const setupApp = require('./app');
 
 const port = process.env.PORT || 3000;
 
