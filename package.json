@@ -7,11 +7,13 @@
     "lint": "eslint --fix --cache src/server.js",
     "start": "nodemon src/server.js",
     "test:integration": "NODE_ENV=test mocha --config test/integration/.mocharc.json test/integration/**/*_spec.js",
-    "test:unit": "NODE_ENV=test mocha --config test/unit/.mocharc.json test/unit/**/*_spec.js"
+    "test:unit": "NODE_ENV=test mocha --config test/unit/.mocharc.json test/unit/**/*_spec.js",
+    "test": "npm run test:unit && npm run test:integration"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "config": "^3.3.6",
     "express": "^4.17.1",
     "mongoose": "^5.13.7"
   },
